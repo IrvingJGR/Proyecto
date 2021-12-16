@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "563007390826",
+    "project_id": "notasapp-a4f4b",
+    "storage_bucket": "notasapp-a4f4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563007390826:android:e85ed7ba18e6104235f613",
+        "android_client_info": {
+          "package_name": "com.xinthink.fltkeep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563007390826-03pmdqq2o02i0veu1p7q5vt87m0ob6t4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xinthink.fltkeep",
+            "certificate_hash": "7e83d8e4fc1607b3366b967224276273bc64da8c"
+          }
+        },
+        {
+          "client_id": "563007390826-0t85sjknt3b14ife8pa36bvlainq7bnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Y3bwnihNlyDMo9qqltcHAV6gV16o7p8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563007390826-0t85sjknt3b14ife8pa36bvlainq7bnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
