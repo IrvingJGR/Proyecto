@@ -64,8 +64,10 @@ class AppDrawer extends StatelessWidget {
           DrawerFilterItem(
             icon: Icons.help_outline,
             title: 'Acerca',
-            
-            
+            onTap: (){
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/perfil');
+            },
           ),
         ],
       ),

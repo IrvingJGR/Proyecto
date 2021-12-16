@@ -7,6 +7,8 @@ import 'models.dart' show CurrentUser;
 import 'screens.dart' show HomeScreen, LoginScreen, NoteEditor, SettingsScreen;
 import 'styles.dart';
 
+import 'package:flt_keep/perfil.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -47,6 +49,7 @@ class NotesApp extends StatelessWidget {
           : user.data != null ? HomeScreen() : LoginScreen(),
         routes: {
           '/settings': (_) => SettingsScreen(),
+          '/perfil': (_) => Perfil()
         },
         onGenerateRoute: _generateRoute,
       ),
