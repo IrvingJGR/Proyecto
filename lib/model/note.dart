@@ -160,11 +160,11 @@ extension NoteStateX on NoteState {
   String get emptyResultMessage {
     switch (this) {
       case NoteState.archived:
-        return 'Archived notes appear here';
+        return 'Las tareas archivadas aparecen aquí';
       case NoteState.deleted:
-        return 'Notes in trash appear here';
+        return 'Las tareas en la papelera aparecen aquí';
       default:
-        return 'Notes you add appear here';
+        return 'Las notas que agregas aparecen aquí';
     }
   }
 }

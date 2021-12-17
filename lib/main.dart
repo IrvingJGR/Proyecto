@@ -61,7 +61,7 @@ class NotesApp extends StatelessWidget {
     try {
       return _doGenerateRoute(settings);
     } catch (e, s) {
-      debugPrint("failed to generate route for $settings: $e $s");
+      debugPrint("No se pudo generar la ruta para $settings: $e $s");
       return null;
     }
   }

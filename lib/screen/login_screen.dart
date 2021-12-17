@@ -190,7 +190,7 @@ class _LoginScreenState extends State<LoginScreen> {
       );
       await _auth.signInWithCredential(credential);
     } catch (e, s) {
-      debugPrint('google signIn failed: $e. $s');
+      debugPrint('Error de inicio de sesion en Google: $e. $s');
       errMsg = 'No se pudo entrar Inténtelo más tarde.';
     } finally {
       _setLoggingIn(false, errMsg);
@@ -205,16 +205,16 @@ class _LoginScreenState extends State<LoginScreen> {
     try {
       _setLoggingIn();
       final result = await _doEmailSignIn(_emailController.text, _passwordController.text);
-      debugPrint('Login result: $result');
+      debugPrint('Resultado de inicio de sesión: $result');
     } on FirebaseAuthException catch (e) {
       errMsg = e.message;
-      debugPrint('login failed: $errMsg [${e.code}].');
+      debugPrint('error de inicio de sesion: $errMsg [${e.code}].');
     } on PlatformException catch (e) {
       errMsg = e.message;
-      debugPrint('login failed: $errMsg [${e.code}].');
+      debugPrint('error de inicio de sesion: $errMsg [${e.code}].');
     } catch (e, s) {
-      debugPrint('login failed: $e. $s');
-      errMsg = 'Login failed, please try again later.';
+      debugPrint('error de inicio de sesion: $e. $s');
+      errMsg = 'No se pudo entrar Inténtelo más tarde.';
     } finally {
       _setLoggingIn(false, errMsg);
     }
